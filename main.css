@@ -1,0 +1,74 @@
+body{
+    background: url("img/bg.jpeg") no-repeat center top /cover;
+    background-size: auto, 100%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header{
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+#game{
+    width: 300px;
+    height: 300px;
+    background: orangered;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid white;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+
+.button{
+    width: 200px;
+    height: 70px;
+    background: rgb(35, 197, 209);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 23px;
+}
+
+.button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttonTwo{
+    width: 200px;
+    height: 70px;
+    background: rgb(35, 197, 209);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+.buttonTwo:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
