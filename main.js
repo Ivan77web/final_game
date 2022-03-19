@@ -3,12 +3,12 @@ for(let i = 0; i<9; i++){
 }
 
 let hod = 0;
-
 let winnerOne = 0;
 let winnerTwo = 0;
 
 function checkWinner(){
     let allBlock = document.getElementsByClassName("block");
+    
     if( (allBlock[0].innerHTML == "X" && allBlock[1].innerHTML == "X" && allBlock[2].innerHTML == "X") || (allBlock[3].innerHTML == "X" && allBlock[4].innerHTML == "X" && allBlock[5].innerHTML == "X") || (allBlock[6].innerHTML == "X" && allBlock[7].innerHTML == "X" && allBlock[8].innerHTML == "X") || (allBlock[0].innerHTML == "X" && allBlock[4].innerHTML == "X" && allBlock[8].innerHTML == "X") || (allBlock[2].innerHTML == "X" && allBlock[4].innerHTML == "X" && allBlock[6].innerHTML == "X")|| (allBlock[0].innerHTML == "X" && allBlock[3].innerHTML == "X" && allBlock[6].innerHTML == "X")|| (allBlock[1].innerHTML == "X" && allBlock[4].innerHTML == "X" && allBlock[7].innerHTML == "X")|| (allBlock[2].innerHTML == "X" && allBlock[5].innerHTML == "X" && allBlock[8].innerHTML == "X") ){
         winnerOne++;
         alert("Победили крестики");
@@ -20,11 +20,8 @@ function checkWinner(){
     }
 }
 
-
-
 document.getElementById("game").onclick = function(event){
     if(event.target.className == "block"){
-        
         if(event.target.innerHTML == "X" || event.target.innerHTML == "0"){
             return
         }
@@ -34,13 +31,11 @@ document.getElementById("game").onclick = function(event){
         } else{
             event.target.innerHTML = "0";
         }
+        
         hod++;
         checkWinner();
     }
 }
-
-
-
 
 document.querySelector(".button").onclick = function(){
     let all = document.getElementsByClassName("block");
@@ -50,11 +45,6 @@ document.querySelector(".button").onclick = function(){
     hod = 0;
 };
 
-
 document.querySelector(".buttonTwo").onclick = function(){
-    alert(`Крестики выиграли ${winnerOne} раз, нолики выиграли ${winnerTwo} раз `)
+    alert(`Крестики выиграли ${winnerOne} раз, нолики выиграли ${winnerTwo} раз `);
 }
-
-
-
-
